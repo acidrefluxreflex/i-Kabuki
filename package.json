@@ -9,15 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@kuma-ui/core": "^1.5.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@kuma-ui/next-plugin": "^1.1.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
+    "daisyui": "^3.9.2",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "eslint-config-prettier": "^9.0.0",
