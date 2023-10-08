@@ -1,0 +1,29 @@
+import Image from "next/image";
+import { Text, Heading, VStack, HStack } from "@kuma-ui/core";
+
+export default function ProductSection() {
+
+
+  const placeholders = [
+    "https://via.placeholder.com/200x200",
+    "https://via.placeholder.com/200x200",
+    "https://via.placeholder.com/200x200",
+    "https://via.placeholder.com/200x200"
+  ]
+
+
+  return (
+    <div className="py-9">
+      <VStack justify="center" alignItems="center">
+        <Heading as="h2" fontSize="48px">
+          Product
+        </Heading>
+        <HStack className="space-x-4">
+         {placeholders.map((placeholder, index) => (
+           <Image key={index} src={placeholder} width={200} height={200} alt="test_image" />
+         ))}
+        </HStack>
+      </VStack>
+    </div>
+  );
+}
