@@ -4,6 +4,13 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.quickSuggestions": {
     "strings": "on"
-  }
-
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#D81F35", // 上のバーの背景色
+    "titleBar.activeForeground": "#fffefe", // 上のバーのテキストの色
+    "activityBar.background": "#E6E3C5", // 左のバーの背景色
+    "activityBar.foreground": "#000000",
+    "editor.minimap.enabled": false, // 左のバーのテキストの色
+  },
 }
+

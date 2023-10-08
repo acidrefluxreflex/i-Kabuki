@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { Text, Heading, VStack } from "@kuma-ui/core";
+import SectionTitle from "./SectionTitle";
 
 export default function MySkillsSection() {
   return (
     <div>
       <VStack justify="center" alignItems="center">
-        <Heading as="h2" fontSize="48px">
-          MySkillsSection
-        </Heading>
+        <SectionTitle text="Skill" />
       </VStack>
     </div>
   );
