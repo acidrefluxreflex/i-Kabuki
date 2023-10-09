@@ -8,15 +8,13 @@ import DesignsSection from "@/components/landing/DesignsSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <div>
-        <HeroView />
-        <VStack justify="center" alignItems="center" className="m-[50px]">
-          <ProductSection />
-          <MySkillsSection />
-          <DesignsSection />
-          <TimeLineSection />
-        </VStack>
-      </div>
+      <HeroView />
+      <VStack justify="center" alignItems="center" className="m-[50px]">
+        <ProductSection />
+        <MySkillsSection />
+        <DesignsSection />
+        <TimeLineSection />
+      </VStack>
     </main>
   );
 }

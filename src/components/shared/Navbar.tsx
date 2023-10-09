@@ -17,7 +17,7 @@ const myFont_2 = localFont({
 
 export default function Navbar() {
   const [isTop, setIsTop] = useState(true);
-  const glitch = useGlitch();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +48,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-end">
         <div>
-        <p ref={glitch.ref} className={myFont_2.className}>blog</p>
+        <p  className={myFont_2.className}>blog</p>
         </div>
       </div>
     </nav>

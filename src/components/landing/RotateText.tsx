@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect } from "react";
+import { Text } from "@kuma-ui/core";
 
 interface RotatingTextProps {
   textList: string[];
+  fontSize: string;
   interval: number; // 切り替え間隔（秒）
 }
 
-const RotatingText: React.FC<RotatingTextProps> = ({ textList, interval }) => {
+const RotatingText: React.FC<RotatingTextProps> = ({ textList, interval, fontSize }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -22,8 +23,10 @@ const RotatingText: React.FC<RotatingTextProps> = ({ textList, interval }) => {
   }, [textList, interval]);
 
   return (
-    <div className="text-2xl text-white">
-          {textList[currentIndex]}
+    <div className="text-start">
+      <Text fontSize={fontSize} className="text-white ">
+        {textList[currentIndex].toUpperCase()}
+      </Text>
     </div>
   );
 };
