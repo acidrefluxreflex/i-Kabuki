@@ -4,13 +4,13 @@ import SectionTitle from "./SectionTitle";
 
 export default function DesignsSection() {
   const size = 200;
-  const rowClassName = "space-y-7"
+  const rowClassName = "space-y-8";
 
   return (
-    <div>
+    <div className="my-9 min-h-screen">
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Design" />
-        <HStack className="space-x-7">
+        <HStack className="space-x-8">
           <VStack className={rowClassName}>
             <Image
               src="/images/nineLogo.webp"
@@ -27,19 +27,20 @@ export default function DesignsSection() {
           </VStack>
 
           <VStack className={rowClassName}>
-            <Spacer width={size} height={(size * 1.61803) / 2}></Spacer>
+            <Spacer height={"57px"} />
             <Image
-              className="w-[200px] h-[200px]"
-              src="/images/kamon_3.webp"
+              className="w-[200px] "
+              src="/images/Yatagarasu.webp"
               width={size}
-              height={size}
+              height={size * 1.61803}
               alt="test_image"
             />
-            <Spacer width={size} height={(size * 1.61803) / 2}></Spacer>
+            <Spacer height={"57px"} />
           </VStack>
+
           <VStack className={rowClassName}>
             <Image
-              src="/images/kamon_1.webp"
+              src="/images/kamon_4.webp"
               width={size}
               height={size}
               alt="test_image"

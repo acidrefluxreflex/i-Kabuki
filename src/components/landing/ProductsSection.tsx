@@ -54,10 +54,10 @@ export default function ProductSection() {
   ];
 
   return (
-    <div className="py-9">
+    <div className="my-9 min-h-screen">
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Product" />
-        <div className="grid grid-cols-3 gap-10 items-end">
+        <div className="grid grid-cols-3 gap-12 items-end">
           {data.map((product, index) => (
             <ProductCard
               key={index}
@@ -67,7 +67,7 @@ export default function ProductSection() {
             />
           ))}
 
-          <button className="btn">read more →</button>
+          <button className="btn btn-secondary">read more →</button>
         </div>
       </VStack>
     </div>

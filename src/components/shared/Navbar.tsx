@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-10 max-w-full  ${
+      className={`fixed top-0 z-50 max-w-full  ${
         isTop
           ? "bg-transparent"
           : "border-solid bg-[#000B00] bg-opacity-50 drop-shadow-2xl backdrop-blur-md backdrop-filter"
