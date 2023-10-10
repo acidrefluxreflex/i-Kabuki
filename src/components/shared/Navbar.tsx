@@ -5,10 +5,7 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import { useGlitch } from "react-powerglitch";
 
-const myFont = localFont({
-  src: "../../../public/fonts/SoukouMincho.ttf",
-  display: "swap",
-});
+
 
 const myFont_2 = localFont({
   src: "../../../public/fonts/PTO-19seg-Box.otf",
@@ -39,7 +36,7 @@ export default function Navbar() {
     } mx-md px-20 navbar items-center transition-all duration-500 ease-in-out`}
     >
       <div className="navbar-start">
-        <Link href="/" className={myFont.className}>
+        <Link href="/" >
           <Heading as="h1" fontSize="28px">
             歌武輝
           </Heading>

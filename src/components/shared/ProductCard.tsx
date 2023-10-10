@@ -11,48 +11,61 @@ export interface ProductProps {
   description?: string;
 }
 
-function ProductView({ imageSrc, title, iconsSrc }: ProductProps) {
+function ProductView(props: ProductProps) {
   return (
-    <VStack className="p-4  items-center space-y-4">
-      <Image src={imageSrc} className="" height={150} width={150} alt={title} />
+    <VStack className="p-4  items-center space-y-4 justify-center">
+      <Image
+        src={props.imageSrc}
+        className=""
+        height={150}
+        width={150}
+        alt={props.title}
+      />
       <Heading
         fontSize="24px"
         className="text-white"
         as="h3"
         style={{ fontFamily: "Futura" }}
       >
-        {title}
+        {props.title}
       </Heading>
       <HStack>
-        {iconsSrc.map((iconSrc, index) => (
-          <Image key={index} src={iconSrc} height={30} width={30} alt={title} />
+        {props.iconsSrc.map((iconSrc, index) => (
+          <Image
+            key={index}
+            src={iconSrc}
+            height={30}
+            width={30}
+            alt={props.title}
+          />
         ))}
       </HStack>
     </VStack>
   );
 }
 
-const ProductInfo = ({ title }: { title: string }) => {
+const ProductInfo = ({
+  title,
+  description,
+}: {
+  title: string;
+  description?: string;
+}) => {
   const glassClasses =
-    "p-8 bg-[#000B00] min-w-[200px] min-h-[322px] text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-[#D81F35]  border";
+    "p-8 flex flex-row justify-center items-start bg-[#000B00] min-w-[200px] min-h-[322px] text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-[#D81F35]  border";
 
   return (
     <VStack className={glassClasses}>
-      <Heading
-        fontSize="24px"
-        as="h3"
-        style={{ fontFamily: "Futura" }}
-      >
+      <Heading fontSize="24px" as="h3" style={{ fontFamily: "Futura" }}>
         {title}
       </Heading>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?
-      </Text>
+      <div className="divider"></div>
+      <Text className="text-[#f2f2f7] text-sm">{description}</Text>
     </VStack>
   );
 };
 
-export function ProductCard({ imageSrc, title, iconsSrc }: ProductProps) {
+export function ProductCard(props: ProductProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   const cornerClasses =
@@ -69,8 +82,9 @@ export function ProductCard({ imageSrc, title, iconsSrc }: ProductProps) {
 
   return (
     <div>
-      <div className="relative min-w-[200px] min-h-[322px]">
-        <ProductView imageSrc={imageSrc} title={title} iconsSrc={iconsSrc} />
+       
+      <div className=" flex flex-row relative min-w-[200px] min-h-[322px] items-center justify-center">
+        <ProductView {...props} />
         <motion.div
           whileHover="hover"
           initial="initial"
@@ -78,8 +92,11 @@ export function ProductCard({ imageSrc, title, iconsSrc }: ProductProps) {
           className="min-w-[200px] min-h-[322px] absolute top-0 z-10"
           onHoverStart={() => setIsHovered(true)}
           onHoverEnd={() => setIsHovered(false)}
+          onTouchStart={() => null}
         >
-          {isHovered ? <ProductInfo title={title} /> : null}
+          {isHovered ? (
+            <ProductInfo title={props.title} description={props.description} />
+          ) : null}
         </motion.div>
         <div
           className={cornerClasses}

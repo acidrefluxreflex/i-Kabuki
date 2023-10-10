@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Text, Heading, VStack, Spacer, HStack } from "@kuma-ui/core";
 import SectionTitle from "./SectionTitle";
 
+
+
 export default function DesignsSection() {
   const size = 200;
   const rowClassName = "space-y-8";
@@ -10,8 +12,9 @@ export default function DesignsSection() {
     <div className="my-9 min-h-screen">
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Design" />
-        <HStack className="space-x-8">
+        <div className="md:flex  md:space-x-8">
           <VStack className={rowClassName}>
+            
             <Image
               src="/images/nineLogo.webp"
               width={size}
@@ -52,7 +55,7 @@ export default function DesignsSection() {
               alt="test_image"
             />
           </VStack>
-        </HStack>
+        </div>
       </VStack>
     </div>
   );

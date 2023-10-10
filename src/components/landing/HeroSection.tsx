@@ -48,7 +48,7 @@ export default function HeroView() {
             />
           </div>
         </div>
-        <VStack className="min-w-[500px]">
+        <VStack className="md:min-w-[500px]">
           <Text className="text-white" style={{ fontFamily: "Futura" }}>
             Hello (^-^)/ I'm Kabuki
           </Text>
