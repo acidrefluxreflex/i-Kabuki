@@ -1,60 +1,40 @@
 "use client";
-import { Box } from "framer-motion";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 interface FlipProps {
-  front: React.ReactNode;
-  back: React.ReactNode;
+  base: React.ReactNode;
+  overlay: React.ReactNode;
 }
 
-export default function FlipComponent(props: FlipProps) {
+export default function OverlayComponent(props: FlipProps) {
   // 状態を管理するフック
   const [isHovered, setIsHovered] = useState(false);
 
   // hover時のアニメーションのバリアント
   const hoverVariants = {
     initial: {
-      rotateY: 0,
-      transition: {
-        duration: 1.0,
-      },
+      scale: 1.0,
     },
     hover: {
-      rotateY: 180,
-      transition: {
-        duration: 1.0,
-      },
-    },
-    exit: {
-      rotateY: 0,
-      transition: {
-        duration: 1.0,
-        
-      },
+      scale: 1.1,
     },
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="relative w-full h-full">
+      {props.base}
       <motion.div
-        className="min-w-64 h-64 shadow-lg rounded-lg "
-        variants={hoverVariants}
-        initial="initial"
         whileHover="hover"
-        exit="exit"
-        // hover状態を切り替える関数を設定
+        initial="initial"
+        variants={hoverVariants}
+        className="absolute top-0 z-10 w-full h-full"
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
+        onTouchStart={() => null}
       >
-        <div className="flex justify-center items-center h-full">
-          {/* hover状態に応じて表示するテキストを変更 */}
-          {isHovered ? (
-            <div style={{ transform: "rotateY(180deg)" }}>{props.back}</div>
-          ) : (
-            <div>{props.front}</div>
-          )}
-        </div>
+        {/* hover状態に応じて表示するテキストを変更 */}
+        {isHovered ? props.overlay : null}
       </motion.div>
     </div>
   );

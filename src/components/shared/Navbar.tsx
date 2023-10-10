@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Heading } from "@kuma-ui/core";
 import localFont from "next/font/local";
 import Link from "next/link";
-import { useGlitch } from "react-powerglitch";
+
 
 
 

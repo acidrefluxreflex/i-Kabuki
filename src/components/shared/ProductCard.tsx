@@ -52,7 +52,7 @@ const ProductInfo = ({
   description?: string;
 }) => {
   const glassClasses =
-    "p-8 flex flex-row justify-center items-start bg-[#000B00] min-w-[200px] min-h-[322px] text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-[#D81F35]  border";
+    "p-8 flex flex-row justify-center items-start bg-[#000B00] min-w-[200px] min-h-[324px] text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-[#D81F35]  border";
 
   return (
     <VStack className={glassClasses}>
@@ -60,7 +60,7 @@ const ProductInfo = ({
         {title}
       </Heading>
       <div className="divider"></div>
-      <Text className="text-[#f2f2f7] text-sm">{description}</Text>
+      <Text className="text-[#C0C0C0] text-sm">{description}</Text>
     </VStack>
   );
 };

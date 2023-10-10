@@ -13,7 +13,7 @@ interface FlipDesignCardProps {
 }
 
 
-export default function FlipDesignCard({ imageSrc, title, description }: FlipDesignCardProps) {
+export default function OverlayCard({ imageSrc, title, description }: FlipDesignCardProps) {
 
     const [isHovered, setIsHovered] = useState(false);
 

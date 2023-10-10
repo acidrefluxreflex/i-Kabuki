@@ -37,13 +37,14 @@ export default function HeroView() {
         backgroundImage: `url(${url})`,
       }}
     >
-      <div id="STAGE" className="hero-content py-24 lg:py-56">
+      <div id="STAGE" className="hero-content md:flex py-24 lg:py-56">
         <div id="AVATAR" className="avatar">
           <div className="w-24 rounded-full">
             <Image
               src={"/images/profileIcon.webp"}
               width={500}
               height={500}
+              className="md:w-[500px] w-[200px]"
               alt="hero"
             />
           </div>
