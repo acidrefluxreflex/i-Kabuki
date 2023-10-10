@@ -11,8 +11,8 @@ export default function Home() {
       <HeroView />
       <VStack justify="center" alignItems="center" className="m-[50px]">
         <ProductSection />
-        <MySkillsSection />
         <DesignsSection />
+        <MySkillsSection />
       </VStack>
     </main>
   );

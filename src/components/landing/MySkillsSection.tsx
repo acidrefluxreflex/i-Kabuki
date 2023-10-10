@@ -6,7 +6,7 @@ export default function MySkillsSection() {
   return (
     <div>
       <VStack justify="center" alignItems="center">
-        <SectionTitle text="Skill" />
+        <SectionTitle text="Works" />
       </VStack>
     </div>
   );

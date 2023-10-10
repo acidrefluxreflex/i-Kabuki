@@ -49,7 +49,9 @@ export default function HeroView() {
           </div>
         </div>
         <VStack className="min-w-[500px]">
-          <Text className="text-white">Hello (^-^)/  I'm Kabuki</Text>
+          <Text className="text-white" style={{ fontFamily: "Futura" }}>
+            Hello (^-^)/ I'm Kabuki
+          </Text>
           <HStack justify={"left"} className={myFont.className}>
             <Text fontSize="70px" className="text-white mr-5">
               {"A"}
