@@ -36,7 +36,12 @@ const DesignInfo = ({
         "text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-[#E6E3C5] border"
       }
     >
-      <Heading className="text-[#f2f2f7]" fontSize="24px" as="h3" style={{ fontFamily: "Futura" }}>
+      <Heading
+        className="text-[#f2f2f7]"
+        fontSize="24px"
+        as="h3"
+        style={{ fontFamily: "Futura" }}
+      >
         {title}
       </Heading>
       <div className="divider"></div>

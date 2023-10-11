@@ -8,7 +8,11 @@ export default function MySkillsSection() {
     <div>
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Works" />
-        <WorksCard imageSrc="https://assets.st-note.com/production/uploads/images/94031239/rectangle_large_type_2_aba5f17b03389c549acfab0b7fc2299c.jpeg?width=800" title="共感はそこまで必要なのか" count="2" />
+        <WorksCard
+          imageSrc="https://assets.st-note.com/production/uploads/images/94031239/rectangle_large_type_2_aba5f17b03389c549acfab0b7fc2299c.jpeg?width=800"
+          title="共感はそこまで必要なのか"
+          count="2"
+        />
       </VStack>
     </div>
   );

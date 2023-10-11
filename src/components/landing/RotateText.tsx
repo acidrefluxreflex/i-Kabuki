@@ -9,7 +9,11 @@ interface RotatingTextProps {
   interval: number; // 切り替え間隔（秒）
 }
 
-const RotatingText: React.FC<RotatingTextProps> = ({ textList, interval, fontSize }) => {
+const RotatingText: React.FC<RotatingTextProps> = ({
+  textList,
+  interval,
+  fontSize,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {

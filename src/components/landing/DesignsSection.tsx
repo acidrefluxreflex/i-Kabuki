@@ -44,15 +44,14 @@ export default function DesignsSection() {
           </VStack>
 
           <VStack className={rowClassName}>
-          
             <OverlayDesign
               isSquare={true}
               imageSRC="/images/kamon_4.webp"
               title="八咫烏"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?"
             />
-            
-             <OverlayDesign
+
+            <OverlayDesign
               isSquare={false}
               imageSRC="/images/tendonLogo.webp"
               title="八咫烏"

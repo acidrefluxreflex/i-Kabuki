@@ -15,14 +15,11 @@ export default function WorksCard({
   count,
   description,
 }: WorksCardProps) {
-
-    const cornerClasses =
+  const cornerClasses =
     "border-r-2 border-t-2 border-r-[#D81F35] border-t-[#D81F35]  w-[12px] h-[12px] absolute";
-
 
   return (
     <div>
-        
       <div className="relative text-white p-4">
         <Image src={imageSrc} width={300} height={160} alt={title}></Image>
         <div className="flex justify-between items-center mt-5">
@@ -69,7 +66,6 @@ export default function WorksCard({
           }}
         ></div>
       </div>
-     
     </div>
   );
 }

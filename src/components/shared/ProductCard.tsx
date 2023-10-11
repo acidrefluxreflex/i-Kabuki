@@ -82,7 +82,6 @@ export function ProductCard(props: ProductProps) {
 
   return (
     <div>
-       
       <div className=" flex flex-row relative min-w-[200px] min-h-[322px] items-center justify-center">
         <ProductView {...props} />
         <motion.div

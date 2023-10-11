@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Text, VStack, HStack } from "@kuma-ui/core";
 import { ProductCard, ProductProps } from "../shared/ProductCard";
 
-
 import SectionTitle from "./SectionTitle";
 
 export default function ProductSection() {
@@ -66,7 +65,6 @@ export default function ProductSection() {
 
   return (
     <div className="my-9 min-h-screen">
-      
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Product" />
         <div className="grid md:grid-cols-3 gap-12 items-end grid-cols-1">
