@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
-import { Text, Heading, VStack, Spacer, HStack } from "@kuma-ui/core";
+import Link from "next/link";
+import { VStack, Spacer } from "@kuma-ui/core";
 import OverlayDesign from "../shared/DesignOverlay";
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
@@ -14,7 +14,6 @@ export default function DesignsSection() {
     <div className="my-9 min-h-screen">
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Design" />
-
         <div className="md:flex md:space-x-9">
           <VStack className={rowClassName}>
             <OverlayDesign
@@ -60,6 +59,12 @@ export default function DesignsSection() {
           </VStack>
         </div>
       </VStack>
+      <Link
+        href="/products"
+        className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
+      >
+        View All
+      </Link>
     </div>
   );
 }

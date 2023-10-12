@@ -1,4 +1,5 @@
-import Image from "next/image";
+
+import Link from "next/link";
 import { Text, VStack, HStack } from "@kuma-ui/core";
 import { ProductCard, ProductProps } from "../shared/ProductCard";
 
@@ -16,6 +17,7 @@ export default function ProductSection() {
       ],
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?",
+      href: "https://zeboot.com/",
     },
     {
       imageSrc: "/images/evekiIcon.webp",
@@ -77,8 +79,12 @@ export default function ProductSection() {
               description={product.description}
             />
           ))}
-
-          <button className="btn btn-secondary">read more →</button>
+          <Link
+            href="/products"
+            className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
+          >
+            View All
+          </Link>
         </div>
       </VStack>
     </div>

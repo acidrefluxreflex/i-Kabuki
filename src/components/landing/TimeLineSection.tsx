@@ -1,4 +1,3 @@
-import { Text, Heading } from "@kuma-ui/core";
 
 interface ListItemProps {
   title: string;

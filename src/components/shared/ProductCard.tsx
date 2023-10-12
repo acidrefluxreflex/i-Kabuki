@@ -9,6 +9,7 @@ export interface ProductProps {
   title: string;
   iconsSrc: string[];
   description?: string;
+  href?: string;
 }
 
 function ProductView(props: ProductProps) {
@@ -47,9 +48,11 @@ function ProductView(props: ProductProps) {
 const ProductInfo = ({
   title,
   description,
+  href,
 }: {
   title: string;
   description?: string;
+  href?: string;
 }) => {
   const glassClasses =
     "p-8 flex flex-row justify-center items-start bg-[#000B00] min-w-[200px] min-h-[324px] text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80  border-[#D81F35]  border";
@@ -61,6 +64,9 @@ const ProductInfo = ({
       </Heading>
       <div className="divider"></div>
       <Text className="text-[#C0C0C0] text-sm">{description}</Text>
+      <button type="button" className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center">
+        <a href={href}>Download</a>
+      </button>
     </VStack>
   );
 };

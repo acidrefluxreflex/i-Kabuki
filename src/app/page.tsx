@@ -1,3 +1,4 @@
+
 import { VStack } from "@kuma-ui/core";
 import HeroView from "@/components/landing/HeroSection";
 import ProductSection from "@/components/landing/ProductsSection";
