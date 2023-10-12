@@ -21,7 +21,7 @@ const WorksOverlay = ({
   description,
 }: WorksCardProps) => {
   const glassClasses_card =
-    "p-4 flex flex-row justify-center items-start bg-[#000B00] min-w-[332px] min-h-[250px] h-[250px]";
+    "p-4 flex flex-row justify-center items-start bg-[#000B00] min-w-[332px] min-h-[280px] h-[260px]";
 
   return (
     <VStack
@@ -30,7 +30,7 @@ const WorksOverlay = ({
         "text-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-80 border-[#E6E3C5] border"
       }
     >
-      <Text>{description}</Text>
+      <Text fontSize="14px">{description}</Text>
 
       <a
         target="_blank"
@@ -49,7 +49,7 @@ export default function WorksCard(props: WorksCardProps) {
   const cornerClasses =
     "border-r-2 border-t-2 border-r-[#D81F35] border-t-[#D81F35] w-[12px] h-[12px] absolute";
   const squareClasses =
-    "absolute top-0 left-0 z-10 min-w-[322px] min-h-[250px]";
+    "absolute top-0 left-0 z-10 min-w-[322px] min-h-[340px]";
 
   const hoverVariants = {
     initial: {
@@ -63,9 +63,15 @@ export default function WorksCard(props: WorksCardProps) {
   return (
     <div className="">
       <div className=" relative text-white p-4">
-        <Image src={props.imageSrc} width={300} height={160} alt={props.title}></Image>
-        <div className=" justify-between items-center mt-5">
+        <Image
+          src={props.imageSrc}
+          width={300}
+          height={160}
+          alt={props.title}
+        ></Image>
+        <div className=" justify-between items-center mt-4">
           <Heading fontSize="16px">{props.title}</Heading>
+          <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
           <HStack className="items-center">
             <Image
               src={"/icons/Favorite Icon.svg"}

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Text, Box, Heading, VStack, HStack, Spacer } from "@kuma-ui/core";
 import { motion } from "framer-motion";
-import HoverComponent from "@/lib/MotionTest";
+
 import React, { useState } from "react";
 export interface ProductProps {
   imageSrc: string;
@@ -23,7 +23,7 @@ function ProductView(props: ProductProps) {
         alt={props.title}
       />
       <Heading
-        fontSize="24px"
+        fontSize="30px"
         className="text-white"
         as="h3"
         style={{ fontFamily: "Futura" }}

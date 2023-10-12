@@ -14,19 +14,19 @@ export default function DesignsSection() {
     <div className="my-9 min-h-screen">
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Design" />
-        <div className="md:flex md:space-x-9">
+        <div className="md:flex md:space-x-20">
           <VStack className={rowClassName}>
             <OverlayDesign
               isSquare={false}
               imageSRC="/images/nineLogo.webp"
               title="Nine"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?"
+              description="「9」をモチーフにしたロゴデザイン。立体にも平面にも見えるような構図を意識したもの。"
             />
             <OverlayDesign
               isSquare={true}
               imageSRC="/images/kamon_2.webp"
               title="Ka"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?"
+              description="アルファベットの「K」と「a」、「可」などを組み合わせて図案化したデザイン。"
             />
           </VStack>
 
@@ -37,7 +37,7 @@ export default function DesignsSection() {
               isSquare={false}
               imageSRC="/images/Yatagarasu.webp"
               title="八咫烏"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?"
+              description="伝承上の八咫烏を幾何学的に構成したロゴデザイン。"
             />
             <Spacer height={"57px"} />
           </VStack>
@@ -46,25 +46,25 @@ export default function DesignsSection() {
             <OverlayDesign
               isSquare={true}
               imageSRC="/images/kamon_4.webp"
-              title="八咫烏"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?"
+              title="ひょうたん"
+              description="家紋で使われる瓢箪の図案を、近未来的に再構成したデザイン"
             />
 
             <OverlayDesign
               isSquare={false}
               imageSRC="/images/tendonLogo.webp"
-              title="八咫烏"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?"
+              title="Tendon"
+              description="お笑い用語の「天丼」を図案化したロゴデザイン。食べ物の「天丼」と笑顔を組み合わせたもの。"
             />
           </VStack>
         </div>
+        <Link
+          href="/products"
+          className="mt-9 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
+        >
+          View All
+        </Link>
       </VStack>
-      <Link
-        href="/products"
-        className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
-      >
-        View All
-      </Link>
     </div>
   );
 }

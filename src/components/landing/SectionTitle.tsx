@@ -22,14 +22,16 @@ export default function SectionTitle({ text }: FirstCharRedProps) {
   }
 
   return (
-    <Heading
-      as="h2"
-      ref={glitch.ref}
-      fontSize="96px"
-      className={myFont.className}
-    >
-      <span className="text-[#D81F35]">{text.charAt(0)}</span>
-      <span className="text-[#E6E3C5]">{text.substring(1)}</span>
-    </Heading>
+    <div className="my-9">
+      <Heading
+        as="h2"
+        ref={glitch.ref}
+        fontSize="96px"
+        className={myFont.className}
+      >
+        <span className="text-[#D81F35]">{text.charAt(0)}</span>
+        <span className="text-[#E6E3C5]">{text.substring(1)}</span>
+      </Heading>
+    </div>
   );
 }

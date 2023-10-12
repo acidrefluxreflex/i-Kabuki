@@ -8,18 +8,6 @@ import SectionTitle from "./SectionTitle";
 export default function ProductSection() {
   const data: ProductProps[] = [
     {
-      imageSrc: "/images/zebootIcon.webp",
-      title: "Zeboot",
-      iconsSrc: [
-        "/icons/Meditate Flower Icon.svg",
-        "/icons/Meditate Person Icon.svg",
-        "/icons/Extension.svg",
-      ],
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?",
-      href: "https://zeboot.com/",
-    },
-    {
       imageSrc: "/images/evekiIcon.webp",
       title: "Eveki",
       iconsSrc: [
@@ -28,8 +16,21 @@ export default function ProductSection() {
         "/icons/Favorite Icon.svg",
       ],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?",
+        "自分好みのAIキャラクターを作成、シェアできるアプリ",
     },
+    {
+      imageSrc: "/images/zebootIcon.webp",
+      title: "Zeboot",
+      iconsSrc: [
+        "/icons/Meditate Flower Icon.svg",
+        "/icons/Meditate Person Icon.svg",
+        "/icons/Extension.svg",
+      ],
+      description:
+        "自然言語処理と禅の発想を用いたコンテンツフィルタ",
+      href: "https://zeboot.com/",
+    },
+ 
     {
       imageSrc: "/images/tokiwaIcon.webp",
       title: "Tokiwa",
@@ -39,7 +40,7 @@ export default function ProductSection() {
         "/icons/Favorite Icon.svg",
       ],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?",
+        "心身の状態を家族や友人で共有できるヘルスケアアプリ",
     },
     {
       imageSrc: "/images/homorIcon.webp",
@@ -50,7 +51,7 @@ export default function ProductSection() {
         "/icons/Idea Icon.svg",
       ],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?",
+        "AIが文体を自動で分析し、修正案を作り出すアプリ",
     },
     {
       imageSrc: "/images/wordmuteIcon.webp",
@@ -61,7 +62,7 @@ export default function ProductSection() {
         "/icons/Extension.svg",
       ],
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, minima?",
+        "インターネット上の過激な情報、言葉をブロックするアプリ",
     },
   ];
 
@@ -69,7 +70,7 @@ export default function ProductSection() {
     <div className="my-9 min-h-screen">
       <VStack justify="center" alignItems="center">
         <SectionTitle text="Product" />
-        <div className="grid md:grid-cols-3 gap-12 items-end grid-cols-1">
+        <div className="grid md:grid-cols-3 gap-20 items-end grid-cols-1">
           {data.map((product, index) => (
             <ProductCard
               key={index}
