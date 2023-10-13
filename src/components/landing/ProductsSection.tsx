@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { Text, VStack, HStack } from "@kuma-ui/core";
 import { ProductCard, ProductProps } from "../shared/ProductCard";
@@ -15,8 +14,8 @@ export default function ProductSection() {
         "/icons/Robot Icon.svg",
         "/icons/Favorite Icon.svg",
       ],
-      description:
-        "自分好みのAIキャラクターを作成、シェアできるアプリ",
+      description: "自分好みのAIキャラクターを作成、シェアできるアプリ",
+      href: "https://eveki.net",
     },
     {
       imageSrc: "/images/zebootIcon.webp",
@@ -26,11 +25,10 @@ export default function ProductSection() {
         "/icons/Meditate Person Icon.svg",
         "/icons/Extension.svg",
       ],
-      description:
-        "自然言語処理と禅の発想を用いたコンテンツフィルタ",
+      description: "自然言語処理と禅の発想を用いたコンテンツフィルタ",
       href: "https://zeboot.com/",
     },
- 
+
     {
       imageSrc: "/images/tokiwaIcon.webp",
       title: "Tokiwa",
@@ -39,19 +37,19 @@ export default function ProductSection() {
         "/icons/Group Icon.svg",
         "/icons/Favorite Icon.svg",
       ],
-      description:
-        "心身の状態を家族や友人で共有できるヘルスケアアプリ",
+      description: "心身の状態を家族や友人で共有できるヘルスケアアプリ",
+      href: "https://apple.co/3PR7Qeb",
     },
     {
       imageSrc: "/images/homorIcon.webp",
-      title: "Homor",
+      title: "Homer",
       iconsSrc: [
         "/icons/Pen and Text Icon.svg",
         "/icons/Robot Icon.svg",
         "/icons/Idea Icon.svg",
       ],
-      description:
-        "AIが文体を自動で分析し、修正案を作り出すアプリ",
+      description: "AIが文体を自動で分析し、修正案を作り出すアプリ",
+      href: "https://apple.co/46pPkAV",
     },
     {
       imageSrc: "/images/wordmuteIcon.webp",
@@ -61,8 +59,8 @@ export default function ProductSection() {
         "/icons/Shield with Heart Icon.svg",
         "/icons/Extension.svg",
       ],
-      description:
-        "インターネット上の過激な情報、言葉をブロックするアプリ",
+      description: "インターネット上の過激な情報、言葉をブロックするアプリ",
+      href: "https://apple.co/3PVMcWo",
     },
   ];
 
@@ -78,6 +76,7 @@ export default function ProductSection() {
               title={product.title}
               iconsSrc={product.iconsSrc}
               description={product.description}
+              href={product.href}
             />
           ))}
           <Link

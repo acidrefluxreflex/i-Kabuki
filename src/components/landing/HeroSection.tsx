@@ -5,11 +5,6 @@ import { useGlitch } from "react-powerglitch";
 import { Text, Box, Heading, VStack, HStack } from "@kuma-ui/core";
 import localFont from "next/font/local";
 
-const myFont_2 = localFont({
-  src: "../../../public/fonts/PTO-19seg-Box.otf",
-  display: "swap",
-});
-
 const myFont = localFont({
   src: "../../../public/fonts/tristandemo-regular.ttf",
   display: "swap",
