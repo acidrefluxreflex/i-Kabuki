@@ -23,7 +23,7 @@ export default function PageHeadImage(props: PageHeadImageProps) {
         backgroundPosition: "center",
       }}
     >
-      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-overlay bg-opacity-70"></div>
       <div className="max-w-md">
         <Heading as="h2" fontSize="96px" className={myFont.className}>
           <span className="text-[#D81F35]">{text.charAt(0)}</span>
