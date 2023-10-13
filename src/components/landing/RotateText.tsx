@@ -28,9 +28,9 @@ const RotatingText: React.FC<RotatingTextProps> = ({
 
   return (
     <div className="text-start">
-      <Text fontSize={fontSize} className="text-white ">
+      <h1 className="text-white md:text-7xl text-5xl">
         {textList[currentIndex].toUpperCase()}
-      </Text>
+      </h1>
     </div>
   );
 };

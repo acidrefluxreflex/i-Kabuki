@@ -7,11 +7,11 @@ export default function Products() {
       <PageHeadImage imageSrc="/images/head33.webp" title="Product" />
       <div className="flex flex-row items-center justify-center  prose prose-p:text-[1.125rem] md:px-0  py-20 px-6">
         <VStack className="">
-          <Blockquote
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo"
-            author="John Doe"
-            info="Google Design"
-          />
+        <Blockquote
+          text="淳朴と、善良と、正義のないところに、偉大はない"
+          author="トルストイ"
+          info="戦争と平和"
+        />
           <p>
             以前アイデアの出し方について参考になる本について文章を書いたので、今回は自分自身の発想法を考えていこうと思う。我が方法から学べ、という自画自賛ではなく、引用ばかりで頼りないと言われないための自己保身である。
           </p>

@@ -10,16 +10,17 @@ export default function Designs() {
       <PageHeadImage imageSrc="/images/head33.webp" title="Design" />
       <div className="my-14 max-w-[700px]">
         <Blockquote
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo"
-          author="John Doe"
-          info="Google Design"
+          text="美。手を伸ばさずに、ひたすらみつめる果実。"
+          author="シモーヌ・ヴェイユ"
+          info="重力と恩寵"
         />
       </div>
       <div
         className={
           "flex flex-row min-w-[700px] mb-9 rounded-md items-center justify-center prose md:px-14 py-2 px-6 bg-[#2f3232]" +
           " " +
-          p_classes + " " + 
+          p_classes +
+          " " +
           h1_classes
         }
       >

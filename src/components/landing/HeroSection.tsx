@@ -27,39 +27,45 @@ export default function HeroView() {
 
   return (
     <section
-      className="hero min-h-screen min-w-[100vh] bg-[#0909096c] bg-blend-multiply"
+      className="hero min-h-screen min-w-full bg-[#0909096c] bg-blend-multiply"
       style={{
         backgroundImage: `url(${url})`,
       }}
     >
-      <div id="STAGE" className="hero-content md:flex py-24 lg:py-56">
+      <div
+        id="STAGE"
+        className="hero-content flex flex-col md:flex-row py-24 lg:py-56"
+      >
         <div id="AVATAR" className="avatar">
           <div className="w-24 rounded-full">
             <Image
               src={"/images/profileIcon.webp"}
               width={500}
               height={500}
-              className="md:w-[500px] w-[200px]"
+              className="w-full md:w-[500px]"
               alt="hero"
             />
           </div>
         </div>
-        <VStack className="md:min-w-[500px]">
+        <VStack className="md:w-[500px] w-full">
           <Text className="text-white" style={{ fontFamily: "Futura" }}>
             Hello (^-^)/ I'm Kabuki
           </Text>
-          <HStack justify={"left"} className={myFont.className}>
-            <Text fontSize="70px" className="text-white mr-5">
-              {"A"}
-            </Text>
-            <div ref={glitch.ref}>
-              <RotatingText
-                fontSize="70px"
-                textList={textList}
-                interval={interval}
-              />
-            </div>
-          </HStack>
+          <div className="text-start">
+            <HStack justify={"left"} className={myFont.className}>
+              <h1 className="text-white mr-5 md:text-7xl text-5xl">
+                {"A"}
+              </h1>
+              <div ref={glitch.ref}>
+                <RotatingText
+                  fontSize="70px"
+                
+                  textList={textList}
+                  interval={interval}
+                />
+              </div>
+            </HStack>
+          </div>
         </VStack>
       </div>
     </section>
