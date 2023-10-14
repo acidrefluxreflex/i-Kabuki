@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Heading } from "@kuma-ui/core";
 import localFont from "next/font/local";
 import Link from "next/link";
-
+import Image from "next/image";
 
 
 
@@ -36,10 +36,8 @@ export default function Navbar() {
     } mx-md px-20 navbar items-center transition-all duration-500 ease-in-out`}
     >
       <div className="navbar-start">
-        <Link href="/" >
-          <Heading as="h1" fontSize="28px">
-            歌武輝
-          </Heading>
+        <Link href="/"  >
+          <Image src="/images/kabuki.webp" width={100} height={100} alt="kabuki"/>
         </Link>
       </div>
       <div className="navbar-end">

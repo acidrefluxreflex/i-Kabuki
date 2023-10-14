@@ -69,10 +69,9 @@ const ProductInfo = ({
         href={href}
         rel="noopener noreferrer"
         target="_blank"
-        className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
+        className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-gray-400 text-center"
       >
         Download
-    
       </a>
     </VStack>
   );
@@ -107,7 +106,11 @@ export function ProductCard(props: ProductProps) {
           onTouchStart={() => null}
         >
           {isHovered ? (
-            <ProductInfo title={props.title} description={props.description} href={props.href} />
+            <ProductInfo
+              title={props.title}
+              description={props.description}
+              href={props.href}
+            />
           ) : null}
         </motion.div>
         <div

@@ -30,15 +30,15 @@ export default function ProductSection() {
     },
 
     {
-      imageSrc: "/images/tokiwaIcon.webp",
-      title: "Tokiwa",
+      imageSrc: "/images/Medit.webp",
+      title: "Medit",
       iconsSrc: [
         "/icons/Chat Icon.svg",
         "/icons/Group Icon.svg",
         "/icons/Favorite Icon.svg",
       ],
       description: "心身の状態を家族や友人で共有できるヘルスケアアプリ",
-      href: "https://apple.co/3PR7Qeb",
+      href: "https://apple.co/32PFkVv",
     },
     {
       imageSrc: "/images/homorIcon.webp",
@@ -81,7 +81,7 @@ export default function ProductSection() {
           ))}
           <Link
             href="/products"
-            className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
+            className="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-[#125115] hover:bg-[#184212] focus:ring-4 focus:outline-none focus:ring-gray-400 text-center"
           >
             View All
           </Link>

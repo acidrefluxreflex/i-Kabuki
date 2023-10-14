@@ -1,5 +1,6 @@
 import { VStack } from "@kuma-ui/core";
 import SectionTitle from "./SectionTitle";
+import ShareButtons from "../shared/ShareButtons";
 export default function ContactSection() {
   const inputClasses =
     "text-white w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:ring-opacity-50 ";
@@ -8,6 +9,7 @@ export default function ContactSection() {
     <div className="text-[#D81F35] min-w-full items-center justify-center flex flex-col">
       <SectionTitle text="Contact" />
       <VStack className="min-w-full">
+        <ShareButtons />
         <form
           name="contact"
           method="POST"
