@@ -5,8 +5,6 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 const myFont_2 = localFont({
   src: "../../../public/fonts/PTO-19seg-Box.otf",
   display: "swap",
@@ -36,8 +34,13 @@ export default function Navbar() {
     } mx-md px-20 navbar items-center transition-all duration-500 ease-in-out`}
     >
       <div className="navbar-start">
-        <Link href="/"  >
-          <Image src="/images/kabuki.webp" width={100} height={100} alt="kabuki"/>
+        <Link href="/">
+          <Image
+            src="/images/kabuki.webp"
+            width={100}
+            height={100}
+            alt="kabuki"
+          />
         </Link>
       </div>
       <div className="navbar-end">

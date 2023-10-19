@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Text,  Heading, VStack } from "@kuma-ui/core";
+import { Text, Heading, VStack } from "@kuma-ui/core";
 
 interface DesignProps {
   isSquare: boolean;

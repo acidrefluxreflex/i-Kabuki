@@ -65,7 +65,9 @@ export default function HeroView() {
             </HStack>
           </div>
           <HStack className="space-x-3 text-[#E6E3C5]">
-            <Heading fontSize={"25px"} className={myFont.className} >Skill: </Heading>
+            <Heading fontSize={"25px"} className={myFont.className}>
+              Skill:{" "}
+            </Heading>
             <Image
               src={"/icons/Skill Swift.svg"}
               width={iconSizeNum}
@@ -80,8 +82,7 @@ export default function HeroView() {
               height={iconSizeNum}
               alt="Skill Swift"
               className={
-                "rounded-sm " +
-                `w-[${iconSizeNum}px] h-[${iconSizeNum}px]`
+                "rounded-sm " + `w-[${iconSizeNum}px] h-[${iconSizeNum}px]`
               }
             />
             <Image

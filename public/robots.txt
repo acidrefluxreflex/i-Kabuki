@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://i-kabuki.com
+
+# Sitemaps
+Sitemap: https://i-kabuki.com/sitemap.xml

@@ -18,7 +18,7 @@ const Slider = () => {
     <Swiper
       className="w-[512px] h-[640px] p-5"
       grabCursor={true}
-      effect={'cards'}
+      effect={"cards"}
       modules={[EffectCards]}
     >
       {images.map((src: string, index: number) => {

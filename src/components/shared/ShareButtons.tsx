@@ -37,14 +37,14 @@ export default function ShareButtons() {
         rel="noopener noreferrer"
         target="_blank"
       >
-      <Image
-        src="/icons/SNS threads.svg"
-        width={30}
-        height={30}
-        alt="Twitter"
-        className={btnClasses}
-      />
-        </a>
+        <Image
+          src="/icons/SNS threads.svg"
+          width={30}
+          height={30}
+          alt="Twitter"
+          className={btnClasses}
+        />
+      </a>
       <Image
         src="/icons/SNS X.svg"
         width={30}

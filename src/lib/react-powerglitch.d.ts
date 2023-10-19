@@ -1,1 +1,1 @@
-declare module 'react-powerglitch';
+declare module "react-powerglitch";

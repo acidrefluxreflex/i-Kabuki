@@ -1,4 +1,3 @@
-
 interface ListItemProps {
   title: string;
   releaseDate: string;

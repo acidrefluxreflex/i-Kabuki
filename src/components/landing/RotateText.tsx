@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Text } from "@kuma-ui/core";
 
 interface RotatingTextProps {
   textList: string[];
@@ -14,6 +13,7 @@ const RotatingText: React.FC<RotatingTextProps> = ({
   interval,
   fontSize,
 }) => {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
