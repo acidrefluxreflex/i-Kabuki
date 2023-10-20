@@ -64,7 +64,6 @@ const ProductInfo = ({
       </Heading>
       <div className="divider"></div>
       <Text className="text-[#C0C0C0] text-sm">{description}</Text>
-
       <a
         href={href}
         rel="noopener noreferrer"

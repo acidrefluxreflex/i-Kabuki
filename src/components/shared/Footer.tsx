@@ -3,10 +3,10 @@ export default function Footer() {
     <footer className="footer p-10 bg-neutral text-neutral-content">
       <nav>
         <header className="footer-title">Services</header>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <a href="https://eveki.net" className="link link-hover">Eveki</a>
+        <a href="https://zeboot.net" className="link link-hover">Zeboot</a>
+        <a className="link link-hover">Medit</a>
+        <a className="link link-hover">Homer</a>
       </nav>
       <nav>
         <header className="footer-title">Company</header>

@@ -1,8 +1,5 @@
 "use client";
-import Image from "next/image";
-import { Text, Box, Heading, VStack, HStack, Spacer } from "@kuma-ui/core";
-import { motion } from "framer-motion";
-import HoverComponent from "@/lib/MotionTest";
+
 import React, { useState } from "react";
 
 interface FlipDesignCardProps {
